@@ -1,0 +1,308 @@
+body {
+    background-image: url("../../mealPictures/addEditMealBackground.avif");
+}
+
+/* The Five Parts Headers*/
+h2 {
+    text-align: left;
+    color: darkslategray;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+}
+h1 {
+    text-align: center;
+    color: darkslategray;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    font-size: 45px;
+}
+/* Add/Edit/Home Meal Buttons */
+.mealButtons {
+    padding-left: 1300px;
+    margin-top: 70px;
+    font-family: 'Century Schoolbook';
+}
+
+.button {
+    padding: 5px;
+}
+
+.editMealBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+.addMealBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+.backBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+.readyBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+}
+/* Middle Section */
+.h2 {
+    text-align: center;
+    color: darkslategray;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+}
+form {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    flex-direction: column;
+}
+/* Part 1 */
+.mealName {
+    width: 400px;
+    height: 35px;
+    text-indent: 10px;
+    background-color: darkslategray;
+    font-size: 15px;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    margin-left: 35px;
+}
+/* Part 2 */
+input {
+    margin-top: 1rem;
+}
+input::file-selector-button {
+    font-weight: bold;
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 30px;
+    background-color: darkslategray;
+    color: pink;
+    font-family: 'Century Schoolbook';
+    margin-left: 35px;
+}
+/* Part 4 */
+.question {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    font-size: 15px;
+    height: 30px;
+    padding-left: 5px;
+    margin-right: 7px;
+    width: 200px;
+}
+.proteinLabel {
+    color: darkslategray;
+    font-size: 16px;
+    font-family: 'Century Schoolbook';
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.dishLabel {
+    color: darkslategray;
+    font-size: 16px;
+    font-family: 'Century Schoolbook';
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.occasionLabel {
+    color: darkslategray;
+    font-size: 16px;
+    font-family: 'Century Schoolbook';
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.typeLabel {
+    color: darkslategray;
+    font-size: 16px;
+    font-family: 'Century Schoolbook';
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.protein {
+    margin-left: 20px;
+}
+.mealOrDish {
+    margin-left: 20px;
+}
+.occasion {
+    margin-left: 20px;
+}
+.type {
+    margin-left: 20px;
+}
+/* Part 5 */
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 85%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 1500px;
+}
+.ingredientsList {
+    background-color: lightskyblue;
+    height: 225px;
+}
+.lastIngredientAdded {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.ingredientLabel {
+    color: firebrick;
+    font-size: 15px;
+    font-family: 'Century Schoolbook';
+    text-align: right;
+}
+.needsIndented {
+    margin-left: 275px;
+}
+.ingredient {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    font-size: 15px;
+    height: 25px;
+    padding-left: 10px;
+    margin-right: 7px;
+    width: 180px;
+    margin-left: 55px;
+}
+.price {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    width: 100px;
+    font-size: 15px;
+    height: 25px;
+    padding-left: 10px;
+    margin-right: 7px;
+    margin-left: 32px;
+}
+.aisleDescription {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    font-size: 15px;
+    height: 25px;
+    padding-left: 10px;
+    margin-right: 7px;
+    width: 440px;
+    margin-left: 85px;
+}
+.kAisle {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    width: 180px;
+    font-size: 15px;
+    height: 25px;
+    padding-left: 10px;
+    margin-right: 7px;
+    margin-left: 40px;
+}
+.wAisle {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    width: 100px;
+    font-size: 15px;
+    height: 25px;
+    padding-left: 10px;
+    margin-right: 7px;
+    margin-left: 35px;
+}
+.xBtnIngredient {
+    background-color: darkslategray;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    font-size: 19px;
+    height: 100px;
+    width: 100px;
+    margin-top: 26px;
+}
+.nextIngredientBtn {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    background-color: darkslategray;
+    font-size: 15px;
+    color: pink;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    width: 240px;
+    height: 30px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 30px;
+}
+/* Finish Button */
+.finishBtn {
+    background-color: darkslategray;
+    font-size: 20px;
+    color: pink;
+    font-family: 'Century Schoolbook';
+    font-weight: bold;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 50px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    border-radius: 30px;
+}
+.formSection {
+    background-color: white;
+    border-radius: 100px;
+    padding: 15px;
+    margin: 100px;
+}
