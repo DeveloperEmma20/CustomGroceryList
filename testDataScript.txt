@@ -1,0 +1,76 @@
+
+DROP TABLE grocerylist.ingredients;
+
+DROP TABLE grocerylist.meals;
+
+DROP DATABASE grocerylist;
+
+CREATE DATABASE grocerylist;
+
+CREATE TABLE grocerylist.ingredients (
+    id int NOT NULL AUTO_INCREMENT,
+    ingredient varchar(255),
+    price varchar(255),
+    kroger_aisle varchar(255),
+    walmart_aisle varchar(255),
+    aisle_description varchar(255),
+    PRIMARY KEY (id)
+); 
+
+CREATE TABLE grocerylist.meals (
+    id int NOT NULL AUTO_INCREMENT,
+    description varchar(255),
+    picture varchar(255),
+    ingredients varchar(255),
+    price varchar(255),
+    protein varchar(255),
+    mealOrDish varchar(255),
+    occasion varchar(255),
+    type varchar(255),
+    PRIMARY KEY (id)
+);
+
+    INSERT INTO grocerylist.ingredients (`ingredient`, `price`, `kroger_aisle`, `walmart_aisle`, `aisle_description`) 
+    VALUES  ('Ground Beef', '$10.00', 'Meat', 'Meat', ''), 
+            ('Bread Crumbs', '$3.00', '16', '15', ''),
+            ('Onion', '$1.00', 'Produce', '1', 'Red or White'), 
+            ('Whole Milk', '$3.00', 'Dairy', '33', ''), 
+            ('Barbecue Sauce', '$2.50', '10', '4', ''), 
+            ('Worcestershire Sauce', '$2.00', '10', '4', ''), 
+            ('Brown Sugar', '$2.50', '16', '15', ''), 
+            ('Red Potatoes', '$4.00', 'Produce', '1', ''), 
+            ('Parmesan Cheese', '$3.00', '12', '6', '');
+
+    INSERT INTO grocerylist.meals (`description`, `picture`, `ingredients`, `price`, `protein`, `mealOrDish`, `occasion`, `type`) 
+    VALUES ('Meatloaf with Roasted Red Potatoes', 
+            'MeatloafRedPotatoes.jpg', 
+            '[{1},{2},{3},{4},{5},{6},{7},{8},{9}]', 
+            '$26.50', 
+            'Beef', 
+            'No', 
+            'Any Day', 
+            'Dinner'
+            );
+
+    INSERT INTO grocerylist.ingredients (`ingredient`, `price`, `kroger_aisle`, `walmart_aisle`, `aisle_description`) 
+    VALUES  ('Beef Chuck Roast', '$15.00', 'Meat', 'Meat', ''), 
+            ('Onion', '$1.00', 'Produce', '1', 'Yellow'), 
+            ('Carrot', '$2.00', 'Produce', '1', 'Large'), 
+            ('Yukon Gold Potatoes', '$4.00', 'Produce', '1', ''), 
+            ('Beef Broth', '$2.50', '14', '7', 'Cubes'), 
+            ('Worcestershire Sauce', '$2.00', '10', '4', ''), 
+            ('Baby Spinach', '$3.00', 'Produce', '1', ''), 
+            ('Tortilla Strips', '$1.50', 'Produce', '1', 'Salad Topper');
+
+    INSERT INTO grocerylist.meals (`description`, `picture`, `ingredients`, `price`, `protein`, `mealOrDish`, `occasion`, `type`) 
+    VALUES ('Beef Stew and Salad', 
+            'BeefStewAndSalad.jpg', 
+            '[{10},{11},{12},{13},{14},{15},{16},{17}]', 
+            '$31.00', 
+            'Beef', 
+            'No', 
+            'Any Day', 
+            'Dinner'
+            );
+
+
