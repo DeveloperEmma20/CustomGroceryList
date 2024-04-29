@@ -1,0 +1,206 @@
+body {
+    background-image: url("../../mealPictures/addEditMealBackground.avif");
+}
+h1 {
+    color: linen;
+    font-size: 50px;
+    font-family: 'Century Schoolbook';
+}
+.indexHeader {
+    text-align: center;
+    font-family: 'Century Schoolbook';
+}
+button {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+    padding-left: 20px;
+}
+/* Photo buttons */
+.photoBtn {
+    background-color: white;
+    border-radius: 0px;
+    border-width: 10px;
+    border-color: darkslategray;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+    padding-left: 20px;
+}
+/* Add/Edit Meal Buttons */
+.mealButtons {
+    padding-left: 1300px;
+    margin-top: 70px;
+    font-family: 'Century Schoolbook';
+}
+.button {
+    padding: 5px;
+}
+.editMealBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+.addMealBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+/* Ready to Cook Meal Toggle Button */
+.readyBtn {
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+}
+
+/* Two Columns - left side food and right side grocery list */
+.column1 {
+    float: left;
+    width: 30%;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-left: 3px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 750px;
+    font-family: 'Century Schoolbook';
+    /*border-style: ridge;
+    border-width: 7px;
+    border-color: ivory;*/
+}
+.column2 {
+    float: left;
+    width: 67%;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 750px;
+    font-family: 'Century Schoolbook';
+    /*border-style: ridge;
+    border-width: 7px;
+    border-color: ivory;*/
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    font-family: 'Century Schoolbook';
+}
+/* Grocery List*/
+/* Individual Meals */
+img {
+    width: 150px;
+    height: 120px;
+}
+
+/* Grocery List Table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Century Schoolbook';
+}
+td, th {
+    border: 2px solid darkslategray;
+    text-align: center;
+    padding: 8px;
+    align-content: center;
+    align-items: center;
+    font-family: 'Century Schoolbook';
+}
+/* Edit the link headers on grocery list table */
+a {
+    color: darkslategray;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    text-decoration: none;
+}
+.glRemoveHeader {
+    font-size: 20px;
+    background-color: darkslategray;
+    color: pink;
+    padding: 2px;
+}
+tr:nth-child(even) {
+    background-color: white;
+    color: darkslategray;
+    font-family: 'Century Schoolbook';
+    font-weight: bold;
+}
+tr:nth-child(odd) {
+    background-color: pink;
+    color: darkslategray;
+    font-family: 'Century Schoolbook';
+    font-weight: bold;
+}
+.groceryListTotal {
+    background-color: white;
+    color: darkslategray;
+    font-family: 'Century Schoolbook';
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 3px;
+    border-color: darkslategray;
+}
+.glHeaders {
+    background-color: lightskyblue;
+}
+
+/* Text Area Directions/Cooking View */
+.cookingView {
+    background-color: white;
+    color: darkslategray;
+    font-family: 'Century Schoolbook';
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 3px;
+    border-color: darkslategray;
+}
+.backButton {
+    margin-left: 900px;
+    margin-top: 20px;
+    background-color: darkslategray;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Century Schoolbook';
+    color: pink;
+    font-weight: bold;
+    padding-left: 20px;
+}
