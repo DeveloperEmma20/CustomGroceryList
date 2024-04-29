@@ -1,0 +1,528 @@
+﻿CREATE TABLE grocerylist.ingredients (
+    id int NOT NULL AUTO_INCREMENT,
+    ingredient varchar(255),
+    price varchar(255),
+    kroger_aisle varchar(255),
+    walmart_aisle varchar(255),
+    aisle_description varchar(255),
+    PRIMARY KEY (id)
+); 
+
+CREATE TABLE grocerylist.meals (
+    id int NOT NULL AUTO_INCREMENT,
+    description varchar(255),
+    picture varchar(255),
+    directions varchar(5000),
+    ingredients varchar(255),
+    price varchar(255),
+    protein varchar(255),
+    mealOrDish varchar(255),
+    occasion varchar(255),
+    type varchar(255),
+    PRIMARY KEY (id)
+);
+
+
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Beef Stew',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Salad',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Beef Stew and Salad',
+            'BeefStewAndSalad.jpg',
+            'Make stew, make salad. Enjoy.',
+            '[{10},{11}]',
+            '25.00',
+            'Beef'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Cajun Chicken Pasta',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Salad',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Cajun Chicken Pasta with Salad',
+            'CajunChickenPastaAndSalad.jpg',
+            'Make cajun chicken and cajun sausage. Make Pasta. Mix in the right sauce. Serve with salad. ',
+            '[{12},{13}]',
+            '25.00',
+            'Chicken'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Tacos',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Chili',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Crockpot Chili and Baked Beef Tacos',
+            'ChiliAndTacos.jpg',
+            'Cook chili in crockpot without meat. Make tacos with meat. Enjoy putting chili on the taco or dipping or on the side.',
+            '[{14},{15}]',
+            '25.00',
+            'Beef'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Chicken',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Tacos & Salad',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Crockpot Queso Chicken Tacos with Salad',
+            'CrockpotQuesoChickenTacos.jpg',
+            'Cook chicken in crockpot. Shred after x hours and add veggies. Make veggie tacos and salad on side and serve together.',
+            '[{16},{17}]',
+            '25.00',
+            'Chicken'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Baked fish',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Seafood Casserole',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Fish with Seafood Casserole',
+            'FishAndSeafoodCass.jpg',
+            'Bake fish. Bake seafood casserole at the same time.',
+            '[{18},{19}]',
+            '25.00',
+            'Fish'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Fried Chicken Breast',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Sliced potatoes',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Country Fried Chicken with Fried Potatoes',
+            'FriedChickenAndPotatoes.jpg',
+            'Fry chicken. Fry potatoes on skillet. Heat white grave and pour over chicken. Add pepper to gravy. Serve.',
+            '[{20},{21}]',
+            '25.00',
+            'Chicken'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Fried fish',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Biscuits',
+            '0',
+            '0',
+            'Needs Updated',
+            '5.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Shrimp and Andouille Gravy',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Biscuits and Shrimp and Andouille Gravy with Fried Fish',
+            'FriedFishBiscAndShrimpGravy.jpg',
+            'Make biscuits. Make Shrimp and andouille gravy. Fry fish. Put together.',
+            '[{22},{23},{24}]',
+            '25.00',
+            'Fish'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Chicken and Rice Dip',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Veggie Quesadillas',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Tortilla chips',
+            '0',
+            '0',
+            'Needs Updated',
+            '5.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Chicken and Rice Dip with Quesadillas',
+            'quesadillasCkRice.jpg',
+            'In a crockpot, make chicken and rice dip. Assemble and fry veggie quesadillas using a skillet. Cut quesadillas in quarters and enjoy dipping in dip or eating with fork with dip on top of them. Further enjoy dip with tortilla chips.',
+            '[{25},{26},{27}]',
+            '25.00',
+            'Chicken'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'BBQ Sloppy Joes',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Homemade Mac & Cheese',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'BBQ Sloppy Joe with Homemade Mac and Cheese',
+            'SloppyJoeAndMac.jpg',
+            'Make bbq sloppy joes. Make homemade mac and cheese.',
+            '[{28},{29},{30}]',
+            '25.00',
+            'Beef'
+    	);
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Garlic Parmesan Chicken Skewers',
+            '0',
+            '0',
+            'Needs Updated',
+            '15.00'
+        );
+INSERT INTO ingredients (ingredient, kroger_aisle, walmart_aisle, aisle_description, price)
+VALUES (
+            'Vegetables',
+            '0',
+            '0',
+            'Needs Updated',
+            '10.00'
+        );
+INSERT INTO meals (description, picture, directions, ingredients, price, protein)
+VALUES (
+            'Garlic Parmesan Chicken and Veggie Skewers',
+            'GarlicParmChickenSkewers.jpg',
+            'Assemble chicken bites, vegetables, and mushrooms to skewers. Add garlic parmesan sauce to chicken. Bake and enjoy.',
+            '[{31},{32}]',
+            '25.00',
+            'Chicken'
+    	);
+
+UPDATE meals
+SET mealOrDish = "No", 
+    occasion = "Any Day", 
+    type = "Dinner";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // START OVER
+            // START OVER
+            // START OVER
+            // START OVER
+            // START OVER
+
+
+DROP TABLE grocerylist.ingredients;
+
+DROP TABLE grocerylist.meals;
+
+DROP DATABASE grocerylist;
+
+CREATE DATABASE grocerylist;
+
+CREATE TABLE grocerylist.ingredients (
+    id int NOT NULL AUTO_INCREMENT,
+    ingredient varchar(255),
+    price varchar(255),
+    kroger_aisle varchar(255),
+    walmart_aisle varchar(255),
+    aisle_description varchar(255),
+    PRIMARY KEY (id)
+); 
+
+CREATE TABLE grocerylist.meals (
+    id int NOT NULL AUTO_INCREMENT,
+    description varchar(255),
+    picture varchar(255),
+    directions varchar(5000),
+    ingredients varchar(255),
+    price varchar(255),
+    protein varchar(255),
+    mealOrDish varchar(255),
+    occasion varchar(255),
+    type varchar(255),
+    PRIMARY KEY (id)
+);
+
+
+// Ingredients For Meatloaf
+
+    INSERT INTO grocerylist.ingredients (`ingredient`, `price`, `kroger_aisle`, `walmart_aisle`, `aisle_description`) 
+    VALUES  ('Ground Beef', '$10.00', 'Meat', 'Meat', ''), 
+            ('Bread Crumbs', '$3.00', '16', '15', ''),
+            ('Onion', '$1.00', 'Produce', '1', 'Red or White'), 
+            ('Whole Milk', '$3.00', 'Dairy', '33', ''), 
+            ('Barbecue Sauce', '$2.50', '10', '4', ''), 
+            ('Worcestershire Sauce', '$2.00', '10', '4', ''), 
+            ('Minced Garlic', '$3.20', 'Produce', '7', ''), 
+            ('Brown Sugar', '$2.50', '16', '15', ''), 
+            ('Red Potatoes', '$4.00', 'Produce', '1', ''), 
+            ('Parmesan Cheese', '$3.00', '12', '6', ''), 
+            ('Garlic Salt', '$2.00', '16', '14', ''), 
+            ('Dried Basil', '$3.00', '16', '14', ''), 
+            ('Dried Parsley', '$3.00', '16', '14', '');
+
+// Meal: Meatloaf with Roasted Red Potatoes
+
+    INSERT INTO grocerylist.meals (`description`, `picture`, `directions`, `ingredients`, `price`, `protein`, `mealOrDish`, `occasion`, `type`) 
+    VALUES ('Meatloaf with Roasted Red Potatoes', 
+            'MeatloafRedPotatoes.jpg', 
+            'Needs Updated', 
+            '[{1}_{2}_{3}_{4}_{5}_{6}_{7}_{8}_{9}_{10}_{11}_{12}_{13}]', 
+            'Needs Updated', 
+            'Beef', 
+            'No', 
+            'Any Day', 
+            'Dinner'
+            );
+
+// Ingredients for Beef Stew & Salad
+
+    INSERT INTO grocerylist.ingredients (`ingredient`, `price`, `kroger_aisle`, `walmart_aisle`, `aisle_description`) 
+    VALUES  ('Beef Chuck Roast', '$15.00', 'Meat', 'Meat', ''), 
+            ('All-Purpose Flour', '$2.00', '16', '15', ''), 
+            ('Onion', '$1.00', 'Produce', '1', 'Yellow'), 
+            ('Carrot', '$2.00', 'Produce', '1', 'Large'), 
+            ('Yukon Gold Potatoes', '$4.00', 'Produce', '1', ''), 
+            ('Beef Broth', '$2.50', '14', '7', 'Cubes'), 
+            ('Tomato Paste', '$1.00', '14', '5', ''), 
+            ('Worcestershire Sauce', '$2.00', '10', '4', ''), 
+            ('Bay Leaves', '$3.00', '16', '14', ''), 
+            ('Fresh Thyme', '$3.00', '16', '14', ''), 
+            ('Baby Spinach', '$3.00', 'Produce', '1', ''), 
+            ('Tortilla Strips', '$1.50', 'Produce', '1', 'Salad Topper');
+
+            // Some reason it stops before this so had to take ",{26},{27},{28},{29},{30}" off in beef stew meal
+            ('Avocado', '$1.00', 'Produce', '1', 'Dark and soft enough to be able to press into. Not black and rotten/too squishy'), 
+            ('Black Beans', '$1.00', '14', '5', ''), ('Shredded Cheese', '$2.50', 'Dairy', '35', 'For salad'), 
+            ('Red onion', '$1.00', 'Produce', '1', ''), 
+            ('Salad Dressing', '$5.00', '10', '1', '')
+
+// Meal: Beef Stew and Salad
+
+    INSERT INTO grocerylist.meals (`description`, `picture`, `directions`, `ingredients`, `price`, `protein`, `mealOrDish`, `occasion`, `type`) 
+    VALUES ('Beef Stew and Salad', 
+            'BeefStewAndSalad.jpg', 
+            'Needs Updated', 
+            '[{7}_{14}_{15}_{16}_{18}_{19}_{20}_{21}_{22}_{23}_{24}_{25}]', 
+            'Needs Updated', 
+            'Beef', 
+            'No', 
+            'Any Day', 
+            'Dinner'
+            );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Smaller for testing:
+            // START OVER
+            // START OVER
+            // START OVER
+            // START OVER
+            // START OVER
+
+
+
+
+DROP TABLE grocerylist.ingredients;
+
+DROP TABLE grocerylist.meals;
+
+DROP DATABASE grocerylist;
+
+CREATE DATABASE grocerylist;
+
+CREATE TABLE grocerylist.ingredients (
+    id int NOT NULL AUTO_INCREMENT,
+    ingredient varchar(255),
+    price varchar(255),
+    kroger_aisle varchar(255),
+    walmart_aisle varchar(255),
+    aisle_description varchar(255),
+    PRIMARY KEY (id)
+); 
+
+CREATE TABLE grocerylist.meals (
+    id int NOT NULL AUTO_INCREMENT,
+    description varchar(255),
+    picture varchar(255),
+    ingredients varchar(255),
+    price varchar(255),
+    protein varchar(255),
+    mealOrDish varchar(255),
+    occasion varchar(255),
+    type varchar(255),
+    PRIMARY KEY (id)
+);
+
+    INSERT INTO grocerylist.ingredients (`ingredient`, `price`, `kroger_aisle`, `walmart_aisle`, `aisle_description`) 
+    VALUES  ('Ground Beef', '$10.00', 'Meat', 'Meat', ''), 
+            ('Bread Crumbs', '$3.00', '16', '15', ''),
+            ('Onion', '$1.00', 'Produce', '1', 'Red or White'), 
+            ('Whole Milk', '$3.00', 'Dairy', '33', ''), 
+            ('Barbecue Sauce', '$2.50', '10', '4', ''), 
+            ('Worcestershire Sauce', '$2.00', '10', '4', ''), 
+            ('Brown Sugar', '$2.50', '16', '15', ''), 
+            ('Red Potatoes', '$4.00', 'Produce', '1', ''), 
+            ('Parmesan Cheese', '$3.00', '12', '6', '');
+
+    INSERT INTO grocerylist.meals (`description`, `picture`, `ingredients`, `price`, `protein`, `mealOrDish`, `occasion`, `type`) 
+    VALUES ('Meatloaf with Roasted Red Potatoes', 
+            'MeatloafRedPotatoes.jpg', 
+            '[{1},{2},{3},{4},{5},{6},{7},{8},{9}]', 
+            '$26.50', 
+            'Beef', 
+            'No', 
+            'Any Day', 
+            'Dinner'
+            );
+
+    INSERT INTO grocerylist.ingredients (`ingredient`, `price`, `kroger_aisle`, `walmart_aisle`, `aisle_description`) 
+    VALUES  ('Beef Chuck Roast', '$15.00', 'Meat', 'Meat', ''), 
+            ('Onion', '$1.00', 'Produce', '1', 'Yellow'), 
+            ('Carrot', '$2.00', 'Produce', '1', 'Large'), 
+            ('Yukon Gold Potatoes', '$4.00', 'Produce', '1', ''), 
+            ('Beef Broth', '$2.50', '14', '7', 'Cubes'), 
+            ('Worcestershire Sauce', '$2.00', '10', '4', ''), 
+            ('Baby Spinach', '$3.00', 'Produce', '1', ''), 
+            ('Tortilla Strips', '$1.50', 'Produce', '1', 'Salad Topper');
+
+    INSERT INTO grocerylist.meals (`description`, `picture`, `ingredients`, `price`, `protein`, `mealOrDish`, `occasion`, `type`) 
+    VALUES ('Beef Stew and Salad', 
+            'BeefStewAndSalad.jpg', 
+            '[{10},{11},{12},{13},{14},{15},{16},{17}]', 
+            '$31.00', 
+            'Beef', 
+            'No', 
+            'Any Day', 
+            'Dinner'
+            );
+
+
+
+

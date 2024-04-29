@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "GroceryListGenerator", "GroceryListGenerator.phpproj", "{0D9EEE0A-F353-4B42-A204-24505C31B714}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D9EEE0A-F353-4B42-A204-24505C31B714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9EEE0A-F353-4B42-A204-24505C31B714}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9EEE0A-F353-4B42-A204-24505C31B714}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9EEE0A-F353-4B42-A204-24505C31B714}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE5DF6BC-5C20-4306-845A-5032E1B7FFB9}
+	EndGlobalSection
+EndGlobal
